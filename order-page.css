@@ -1,6 +1,13 @@
 body {
     margin: 0;
 }
+.heading-container {
+    background-color: aqua;
+}
+.product-heading {
+    text-align: center;
+    padding-top: 50px;
+}
 .image-container {
     display: flex;
     flex-flow: column wrap;
@@ -11,9 +18,14 @@ body {
     display: flex;
     width: 150px;
 }
-.personal {
+.personal, .payment, .billing {
     float: left;
+    width: 25%;
+    text-align: center;
+    padding-left: 95px;
 }
-.payment {
-    float: right;
+button {
+    position: absolute;
+    top: 85%;
+    right: 47%;
 }

@@ -8,6 +8,14 @@
 </head>
 <body>
 
+    <div class = "heading-container">
+        <h3 class = "heading">MangaSite</h3>
+    </div>
+
+    <div class = "product-heading">
+        <h2>The Girl from the Other Side: Volume 10</h2>
+    </div>
+
     <div class = "image-container">
         <img src = "https://images-na.ssl-images-amazon.com/images/I/81DxPgckt4S.jpg" alt = "The Girl from the Other Side: Volume 10">
         <div class = "quantity-list">
@@ -44,7 +52,12 @@
             <input type = "text" name = "number" id = "number" placeholder = "Card Number..."><br>
             <input type = "text" name = "expiration-date" id = "expiration-date" placeholder = "Expiration Date"><br>
             <input type = "number" name = "scode" id = "scode" placeholder = "Security Code..."><br>
-            <label for = "baddress">Billing Address:</label><br>
+        </form>
+    </div>
+
+    <div class = "billing">
+        <h3>Billing Address:</h3>
+        <form>
             <input type = "text" id = "saddress1" name = "saddress1" placeholder = "Street Address Line 1..."><br>
             <input type = "text" id = "saddress2" name = "saddress2" placeholder = "Street Address Line 2..."><br>
             <input type = "text" id = "city" name = "city" placeholder = "City..."><br>
@@ -52,6 +65,8 @@
             <input type = "text" id = "zip-code" name = "zip-code" placeholder = "Zip-Code..."><br>
         </form>
     </div>
+    
+    <button>Place Order</button>
     
 </body>
 </html>
