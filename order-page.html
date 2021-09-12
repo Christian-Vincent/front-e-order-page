@@ -3,9 +3,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "order-page.css">
     <title>Front-E Order Page</title>
 </head>
 <body>
+
+    <div class = "image-container">
+        <img src = "https://images-na.ssl-images-amazon.com/images/I/81DxPgckt4S.jpg" alt = "The Girl from the Other Side: Volume 10">
+        <div class = "quantity-list">
+            <label for = "quantity">Quantity:</label>
+            <select name = "number" id = "number">
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5</option>
+                <option value = "6">6</option>
+            </select>
+            <br><br>
+        </div>
+    </div>
+
+    <div class = "personal">
+        <h3>Personal Information:</h3>
+        <form>
+            <input type = "text" id = "fname" name = "fname" placeholder = "First Name..."><br>
+            <input type = "text" id = "lname" name = "lname" placeholder = "Last Name..."><br>
+            <input type = "text" id = "saddress1" name = "saddress1" placeholder = "Street Address Line 1..."><br>
+            <input type = "text" id = "saddress2" name = "saddress2" placeholder = "Street Address Line 2..."><br>
+            <input type = "text" id = "city" name = "city" placeholder = "City..."><br>
+            <input type = "text" id = "state" name = "state" placeholder = "State..."><br>
+            <input type = "text" id = "zip-code" name = "zip-code" placeholder = "Zip-Code..."><br>
+        </form>
+    </div>
+
+    <div class = "payment">
+        <h3>Payment Information:</h3>
+        <form>
+            <input type = "text" name = "card-type" id = "card-type" placeholder = "Card Type..."><br>
+            <input type = "text" name = "number" id = "number" placeholder = "Card Number..."><br>
+            <input type = "text" name = "expiration-date" id = "expiration-date" placeholder = "Expiration Date"><br>
+            <input type = "number" name = "scode" id = "scode" placeholder = "Security Code..."><br>
+            <label for = "baddress">Billing Address:</label><br>
+            <input type = "text" id = "saddress1" name = "saddress1" placeholder = "Street Address Line 1..."><br>
+            <input type = "text" id = "saddress2" name = "saddress2" placeholder = "Street Address Line 2..."><br>
+            <input type = "text" id = "city" name = "city" placeholder = "City..."><br>
+            <input type = "text" id = "state" name = "state" placeholder = "State..."><br>
+            <input type = "text" id = "zip-code" name = "zip-code" placeholder = "Zip-Code..."><br>
+        </form>
+    </div>
     
 </body>
 </html>

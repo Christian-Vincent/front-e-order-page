@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+.image-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    display: flex;
+    width: 150px;
+}
+.personal {
+    float: left;
+}
+.payment {
+    float: right;
+}
