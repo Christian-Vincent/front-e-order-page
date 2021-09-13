@@ -8,9 +8,9 @@
 </head>
 <body>
 
-    <div class = "heading-container">
-        <h3 class = "heading">MangaSite</h3>
-    </div>
+    <ul>
+        <li><a href = "order-page.html">MangaSite</a></li>
+    </ul>
 
     <div class = "product-heading">
         <h2>The Girl from the Other Side: Volume 10</h2>
@@ -20,7 +20,7 @@
         <img src = "https://images-na.ssl-images-amazon.com/images/I/81DxPgckt4S.jpg" alt = "The Girl from the Other Side: Volume 10">
         <div class = "quantity-list">
             <label for = "quantity">Quantity:</label>
-            <select name = "number" id = "number">
+            <select name = "number" id = "quantity">
                 <option value = "1">1</option>
                 <option value = "2">2</option>
                 <option value = "3">3</option>
@@ -31,6 +31,8 @@
             <br><br>
         </div>
     </div>
+
+    <h4 class = "total">Total: 8.95</h4>
 
     <div class = "personal">
         <h3>Personal Information:</h3>
@@ -48,8 +50,13 @@
     <div class = "payment">
         <h3>Payment Information:</h3>
         <form>
-            <input type = "text" name = "card-type" id = "card-type" placeholder = "Card Type..."><br>
-            <input type = "text" name = "number" id = "number" placeholder = "Card Number..."><br>
+            <select name = "card-type" id = "card-type">
+                <option value = "american-express">American Express</option>
+                <option value = "visa">Visa</option>
+                <option value = "discover">Discover</option>
+                <option value = "mastercard">Mastercard</option>
+            </select><br>
+            <input type = "number" name = "card-number" id = "card-number" placeholder = "Card Number..."><br>
             <input type = "text" name = "expiration-date" id = "expiration-date" placeholder = "Expiration Date"><br>
             <input type = "number" name = "scode" id = "scode" placeholder = "Security Code..."><br>
         </form>
@@ -66,7 +73,13 @@
         </form>
     </div>
     
-    <button>Place Order</button>
+    <button onclick = "myFunction()">Place Order</button>
+
+    <script>
+        function myFunction() {
+            window.alert("Thank you for your purchase! A confirmation email will be sent to you shortly.")
+        }
+    </script>
     
 </body>
 </html>

@@ -1,12 +1,35 @@
 body {
     margin: 0;
+    background-color: rgb(229, 235, 239);
 }
-.heading-container {
-    background-color: aqua;
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(163, 187, 205);
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 140%;
+    color: black;
+    padding: 5px 5px;
+}
+li a:hover {
+    opacity: 0.5;
 }
 .product-heading {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 23px;
 }
 .image-container {
     display: flex;
@@ -18,14 +41,31 @@ body {
     display: flex;
     width: 150px;
 }
+.quantity-list {
+    padding-top: 3px;
+}
+.total {
+    text-align: center;
+}
 .personal, .payment, .billing {
     float: left;
     width: 25%;
     text-align: center;
     padding-left: 95px;
 }
+input {
+    margin: 6px 0;
+}
 button {
     position: absolute;
-    top: 85%;
+    top: 95%;
     right: 47%;
+    border-radius: 12px;
+    color: yellow;
+    background-color: black;
+    font-size: 16px;
+}
+button:hover {
+    text-decoration: underline;
+    opacity: 0.6;
 }
